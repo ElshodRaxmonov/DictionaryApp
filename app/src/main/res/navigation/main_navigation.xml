@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/fragmentHome">
+
+    <fragment
+        tools:layout="@layout/fragment_home"
+        android:id="@+id/fragmentHome"
+        android:name="com.example.dictionaryapp.ui.fragment.FragmentHome"
+        android:label="FragmentHome" >
+
+        <action
+            android:id="@+id/action_fragmentHome_to_fragmentFavorite"
+            app:destination="@id/fragmentFavorite" />
+        <action
+            android:id="@+id/action_fragmentHome_to_fragmentQuiz"
+            app:destination="@id/fragmentQuiz" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/fragment_favorite"
+        android:id="@+id/fragmentFavorite"
+        android:name="com.example.dictionaryapp.ui.fragment.FragmentFavorite"
+        android:label="FragmentFavorite" >
+        <action
+            android:id="@+id/action_fragmentFavorite_to_fragmentHome"
+            app:destination="@id/fragmentHome" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentHistory2"
+        android:name="com.example.dictionaryapp.ui.fragment.FragmentHistory"
+        android:label="fragment_history"
+        tools:layout="@layout/fragment_settings" >
+        <action
+            android:id="@+id/action_fragmentHistory2_to_fragmentQuiz"
+            app:destination="@id/fragmentQuiz" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentQuiz"
+        android:name="com.example.dictionaryapp.ui.fragment.FragmentQuiz"
+        android:label="FragmentQuiz"
+        tools:layout="@layout/fragment_quiz">
+        <action
+            android:id="@+id/action_fragmentQuiz_to_fragmentHistory2"
+            app:destination="@id/fragmentHistory2" />
+    </fragment>
+</navigation>
