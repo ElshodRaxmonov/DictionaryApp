@@ -11,4 +11,4 @@ A Simple Android Dictionary application that uses SQLite database stored in the 
 
 >Expandable word entries** with translation, part of speech, and phonetics
 
-<img src="scren.png" width="1000" alt="Dictionary Screenshot" />
+<img src="Add a subheading.png" width="1000" alt="Dictionary Screenshot" />
