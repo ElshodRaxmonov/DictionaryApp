@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true">
+        <shape>
+            <corners android:radius="36dp" />
+            <solid android:color="#03A9F4" />
+            <style>
+
+                <item android:name="android:elevation">12dp</item>
+
+
+            </style>
+        </shape>
+    </item>
+
+    <item android:state_enabled="true">
+        <shape>
+            <corners android:radius="36dp" />
+            <solid android:color="#71C2E6" />
+        </shape>
+        <style>
+
+            <item android:name="android:elevation">12dp</item>
+
+        </style>
+    </item>
+    <item android:state_enabled="false">
+        <shape>
+
+            <corners android:radius="36dp" />
+            <solid android:color="#71C2E6" />
+        </shape>
+        <style>
+            <item android:name="android:elevation">12dp</item>
+
+        </style>
+    </item>
+</selector>
